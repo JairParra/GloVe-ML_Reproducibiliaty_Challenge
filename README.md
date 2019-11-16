@@ -25,8 +25,14 @@ If there is something else wants to do additionally, please discuss it and then 
 - Please check out the repository structure and READMEs 
 - Please check out the link to our overleaf paper. 
 
-# Jair: 
+## Jair: 
 - finish setting up repository and paper templates 
+
+## KhorenL:  
+- See All 
+
+## Rivka
+- See All 
 
 
 # Reproducibility: 
