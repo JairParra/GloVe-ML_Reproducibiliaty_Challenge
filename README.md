@@ -34,3 +34,7 @@ If there is something else wants to do additionally, please discuss it and then 
 
 # Best Model: 
 - Best model description will be included in here: 
+
+# Is this loss??? 
+
+![](figs/is_this_loss.jpg)
