@@ -46,11 +46,11 @@ If there is something else wants to do additionally, please discuss it and then 
 
 ### Group labels assignment 
 
--[](figs/Specific_cost_function.jpg)
+![](figs/Group_label.jpg)
 
 ### Specific Cost Function (i.e., this paper's) 
 
-![](figs/Prediction_logreg.jpg)
+![](figs/Specific_cost_function.jpg)
 
 
 
