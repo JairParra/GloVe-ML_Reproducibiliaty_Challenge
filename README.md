@@ -4,7 +4,11 @@
 [![Generic badge](https://img.shields.io/badge/Neat_level-OVER_9000-green.svg)](https://shields.io/)
 
 # COMP551_Mini4: Replication challenge 
+
 - **Track 2:** Reproduce and modify the model. 
+"You will first reproduce the results reported in the paper by running the code provided by the authors. Then you will try to modify the model and perform ablation studies to understand the model's robustness and evaluate the importance of the various model components. (In this context, the term "ablation" is used to describe the process of removing different model components to see how it impacts performance.) You can also try to improve the model based on your experiments. You should do a thorough analysis of the model through an
+extensive set of experiments. Note that some experiments will be diffcult to replicate due to computational resources. It is fine to reproduce only a subset of the original paper's results or to work on a smaller variant of the data|if necessary. **At a minimum, in this track you should use the authors code to reproduce a non-trivial subset of their results and explore how the model performs after you make minor modiffcations (e.g., changes to hyperparameters). An outstanding project in this track would perform very a detailed ablation study and/or implement significant/meaningful extensions of the model. **. 
+- **Our idea**: ??? 
 
 ## Our paper: 
 - https://www.overleaf.com/7741963696nwdpsgxqvvqy
@@ -52,6 +56,8 @@ If there is something else wants to do additionally, please discuss it and then 
 
 ![](figs/Specific_cost_function.jpg)
 
+### Attribution 
 
+This work is entirely based on the paper *From Group to Individual Labels using Deep Features* with its implementation code, produced by Dimitrios Kotzias, Misha Denil, Nando De Freitas, and Padhraic Smyth (see http://dkotzias.com/papers/GICF.pdf). The replication, modification and employment of the code is for academic purposes only. 
 
 
