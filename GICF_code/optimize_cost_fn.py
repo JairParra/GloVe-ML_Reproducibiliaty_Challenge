@@ -46,7 +46,7 @@ class GICF(object):
         elif dataset == 'amazon':
             dir_name = 'data/amazon/cells/'
         else:
-            print 'Wrong dataset Name.'
+            print ('Wrong dataset Name.')
             return
 
         embeddings_file_train = dir_name + 'train.emb'  # emb\t emb\t score\n
@@ -90,7 +90,7 @@ class GICF(object):
         There is a terminating function which determines if optimization should end before the epochs end,
         based on essentially heuristics. Every 50 iterations prints progress. Keeps the best theta values based on the
         group reconstruction score. At the end prints detailed stats about classifying with that."""
-        print 'Optimizing for ', self._param_str
+        print ('Optimizing for ', self._param_str)
         self.total_iterations = 0
         accs = []
         theta = np.random.random(self.embeddings_dimension)
@@ -103,8 +103,8 @@ class GICF(object):
 
             if terminate:
                 break
-            print '-------epoch ', epoch, '-----------'
-            print self._print_titles
+            print ('-------epoch ', epoch, '-----------')
+            print (self._print_titles)
 
             X, gs, gl = self.train_data.get_next_batch()
 
@@ -141,7 +141,7 @@ class GICF(object):
 
         io.save_theta(theta, self.output_name + self._param_str + '_last')
 
-        print '\n\n\n\t\t\t---BEST THETA VALUE (in training group)---'
+        print ('\n\n\n\t\t\t---BEST THETA VALUE (in training group)---')
 
         self._print_progress(best_theta, print_details=True)
         return self.train_acc, self.group_acc, self.instance_acc, self.instance_auc
@@ -160,20 +160,20 @@ class GICF(object):
 
     def _print_progress(self, theta, print_details=False):
         # iterations  train accuracy, train AUC, test accuracy, test AUC | instance accuracy, instance auc, instance PRC
-        print '%6d\t' % self.total_iterations,
+        print ('%6d\t' % self.total_iterations),
         acc_train, auc_train = self.train_eval.evaluate_groups(theta, print_details)
 
         self.train_acc.append([acc_train])
-        print round(100 * acc_train, 2), ' \t\t(', round(100 * auc_train, 2), ')\t',
+        print (round(100 * acc_train, 2), ' \t\t(', round(100 * auc_train, 2), ')\t'),
         acc, auc = self.test_eval.evaluate_groups(theta, print_details)
         self.group_acc.append(acc)
-        print round(100 * acc, 2), ' \t\t(', round(100 * auc, 2), ')\t',
-        print '\t|\t',
+        print (round(100 * acc, 2), ' \t\t(', round(100 * auc, 2), ')\t'),
+        print ('\t|\t'),
         acc, auc = self.instance_eval.evaluate_instances(theta)
         auprc = self.instance_eval.evaluate_instances(theta, prc=True)
 
         self.instance_acc.append(acc)
         self.instance_auc.append(auc)
 
-        print round(100 * acc, 2), '\t\t(', round(100 * auc, 2), ')\t', ' \t(', round(100 * auprc, 2), ')\t'
+        print (round(100 * acc, 2), '\t\t(', round(100 * auc, 2), ')\t', ' \t(', round(100 * auprc, 2), ')\t')
         return acc_train  # based on this we decide best theta

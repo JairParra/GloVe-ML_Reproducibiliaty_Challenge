@@ -12,7 +12,7 @@ def get_sim_matrix(X, t='rbf', var=0.5):
     elif t == 'cosine' or t == 'cos':
         return get_matrix_cos(X)
     else:
-        print'Wrong option for similarity. Choices are "rfb" and "cos"'
+        print('Wrong option for similarity. Choices are "rfb" and "cos"')
 
 
 def get_matrix_rbf(X, var, have_var=True):
