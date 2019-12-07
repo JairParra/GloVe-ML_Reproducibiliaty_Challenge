@@ -134,20 +134,20 @@ class ResultAnalyzer:
         print
         total_pos = self.tp + self.fp
         total_neg = self.tn + self.fn
-        print '\tTrue\tFalse\t\tTotal'
-        print 'Pos', self.tp, '\t', self.fp, ' \t|\t\t', total_pos
-        print 'Neg', self.tn, '\t', self.fn, ' \t|\t\t', total_neg
-        print '\t', str(self.tp + self.tn), '\t', str(self.fp + self.fn), '\t\t\t|', str(total_pos + total_neg)
-        print '------------------------------------'
+        print ('\tTrue\tFalse\t\tTotal')
+        print ('Pos', self.tp, '\t', self.fp, ' \t|\t\t', total_pos)
+        print ('Neg', self.tn, '\t', self.fn, ' \t|\t\t', total_neg)
+        print ('\t', str(self.tp + self.tn), '\t', str(self.fp + self.fn), '\t\t\t|', str(total_pos + total_neg))
+        print ('------------------------------------')
 
-        print 'Accuracy', self.accuracy()
-        print 'Precision', self.precision()
-        print 'Recall', self.recall()
-        print 'AUC: ', self.auc(), ' ', self.auc(average='micro')
+        print ('Accuracy', self.accuracy())
+        print ('Precision', self.precision())
+        print ('Recall', self.recall())
+        print ('AUC: ', self.auc(), ' ', self.auc(average='micro'))
 
-        print '\nPositives',
-        print 'Average: ', self.positiveAverage(), '\tDeviation: ', self.getDeviation('positive'), '\ttotal', len(
-            self.positives)
-        print '\nNegatives',
-        print 'Average: ', self.negativeAverage(), '\tDeviation: ', self.getDeviation('negative'), '\ttotal', len(
-            self.negatives)
+        print ('\nPositives'),
+        print ('Average: ', self.positiveAverage(), '\tDeviation: ', self.getDeviation('positive'), '\ttotal', len(
+            self.positives))
+        print ('\nNegatives'),
+        print ('Average: ', self.negativeAverage(), '\tDeviation: ', self.getDeviation('negative'), '\ttotal', len(
+            self.negatives))

@@ -90,12 +90,12 @@ class InstanceEvaluator(object):
             self.eval_data = np.array(eval_data)
             self.y_known = np.array(y_known)
         if not quiet:
-            print 'Instances:  positive: ', pos, ' Negative: ', neg
+            print ('Instances:  positive: ', pos, ' Negative: ', neg)
 
     def evaluate_instances(self, theta=None, prc=False):
         """Pass the instance scores and ground truth to result analyzer and return proper metric"""
         if not self.labeled_data:
-            print 'I have no instance data. Must set them, and labels first'
+            print ('I have no instance data. Must set them, and labels first')
             return None
         if theta is not None:   # theta overrides existing one if given
             self.theta = theta

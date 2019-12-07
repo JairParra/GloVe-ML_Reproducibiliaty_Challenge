@@ -20,7 +20,7 @@ MIN_INSTANCES = 10
 class DataHandler(object):
     def __init__(self, embeddings_file, max_size=200000,  quiet=False):
         if not quiet:
-            print 'loading data...',
+            print ('loading data...'),
         start = time.time()
         self.embeddings_file = embeddings_file  # file with data . One group of data at each line, and score at the end
         self.max_size = max_size  # max number of groups
@@ -33,10 +33,10 @@ class DataHandler(object):
         self.instances, self.group_labels, self.group_lengths = self.load_data_embeddings(embeddings_file)
 
         if not quiet:
-            print 'Total instances: ', len(self.instances), ' in ', len(self.group_labels), ' groups',
-            print 'Positives: ', self.positives, ' Negatives: ', self.negatives
+            print ('Total instances: ', len(self.instances), ' in ', len(self.group_labels), ' groups'),
+            print ('Positives: ', self.positives, ' Negatives: ', self.negatives)
             duration = time.time() - start
-            print 'done  in', duration, 'seconds'
+            print ('done  in', duration, 'seconds')
 
     def load_data_embeddings(self, embeddings_file, instance_sep='\t', feature_sep=' '):  # each line is a group
         """Loads the file with the embeddings. Each line corresponds to one group. Each embedding corresponds to one
@@ -49,7 +49,7 @@ class DataHandler(object):
         with open(embeddings_file) as f:
             for line in f:
                 if d % 10000 == 0:
-                    print d, '... ',
+                    print (d, '... '),
                 if len(line) < MIN_INSTANCES:
                     continue  # remove groups with less than MIN_INSTANCES instances
 

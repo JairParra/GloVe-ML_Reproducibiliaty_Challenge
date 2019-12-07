@@ -12,7 +12,7 @@ def save_theta(theta, name, acc='', best=False):
 
 
 def load_theta(name):  # returns a vector with parameter theta
-    print 'loading theta'
+    print ('loading theta')
     if 'theta' in name:
         return np.loadtxt(name, delimiter=',')
     return np.loadtxt(name + '_theta', delimiter=',')
