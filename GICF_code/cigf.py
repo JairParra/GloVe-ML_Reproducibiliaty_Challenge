@@ -19,3 +19,4 @@ if __name__ == '__main__':
     gicf = GICF('movies')   # 'movies' is the name of one of our datasets
     gicf.set_parameters(batch_size=100, similarity_fn='cos')    # set your own parameters here for experiments
     gicf.train()    # this prints results
+
