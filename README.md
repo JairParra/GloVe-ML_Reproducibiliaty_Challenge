@@ -20,10 +20,10 @@ extensive set of experiments. Note that some experiments will be diffcult to rep
     - Status **Failed attempt to reproduce**. The complexity of the code, lack of comments and documentation, issues with external code resources, dependency issues. The external library the author uses, ( from Denis et al.) use to produce the word embedding is highly complex, uncommented and undocumented as well. Reproducibility is thus extremely difficult. 
     
  - **GloVe: Global Vectors for Word Representation**
-  - Their paper: https://nlp.stanford.edu/pubs/glove.pdf 
-  - Their repository: https://github.com/stanfordnlp/GloVe
-  - *Comments:* The repository uses code in C, python and bash; however the repository structure is very well organized, the code is fairly clean and well-commented, and they also include a demo.  
-  - *What would we like to do?*: Reproduce the paper
+   - Their paper: https://nlp.stanford.edu/pubs/glove.pdf 
+   - Their repository: https://github.com/stanfordnlp/GloVe
+   - *Comments:* The repository uses code in C, python and bash; however the repository structure is very well organized, the code is fairly clean and well-commented, and they also include a demo.  
+   - *What would we like to do?*
  
 
 ## Announcements: 
@@ -47,7 +47,7 @@ If there is something else wants to do additionally, please discuss it and then 
 - See All 
 
 ### Rivka 
-- Modify the paper accordingly
+- Get the missing tests from the Demo running
 
 ### Attribution 
 
