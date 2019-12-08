@@ -108,13 +108,13 @@ def run():
                 with open(os.path.join("{{job_dir}}", "model_{:05}.pkl".format(batch_index)), 'w') as model_file:
                     pickle.dump(model, model_file, protocol=-1)
 
-            print ("B: {}, A: {}, C: {}, Prop1: {}, Param size: {}, best: {}".format(
+            print "B: {}, A: {}, C: {}, Prop1: {}, Param size: {}, best: {}".format(
                 batch_index,
                 acc,
                 iteration_info['cost'],
                 np.argmax(Y_hat, axis=1).mean(),
                 np.mean(np.abs(model.pack())),
-                best_acc))
+                best_acc)
 
             time_now = time.time()
 
