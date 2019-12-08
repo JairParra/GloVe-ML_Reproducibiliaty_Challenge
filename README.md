@@ -25,6 +25,8 @@ extensive set of experiments. Note that some experiments will be diffcult to rep
    - *Comments:* The repository uses code in C, python and bash; however the repository structure is very well organized, the code is fairly clean and well-commented, and they also include a demo.  
    - *What would we like to do?*
  
+ - *General Reproducibility Notes* 
+   - Most of these works and libraries at its core are purely dependent/based on Linux systems, with very little or no support for reproducibility in other systems like Windows. 
 
 ## Announcements: 
 - We are abandoning the previous paper. Focus on the new one 
