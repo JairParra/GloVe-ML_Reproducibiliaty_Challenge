@@ -25,7 +25,7 @@
    - Their repository: https://github.com/stanfordnlp/GloVe
    - *Comments:* The repository uses code in C, python and bash; however the repository structure is very well organized, the code is fairly clean and well-commented, and they also include a demo.  
    
- ## *General Reproducibility Notes* 
+ ## General Reproducibility Notes
    - Most of these works and libraries at its core are purely dependent/based on Linux systems, with very little or no support for reproducibility in other systems like Windows. Please first follow the original setup instructions from the *GloVe* repository (https://github.com/stanfordnlp/GloVe).  
    - The script modifications/and or additional scripts we implemented can be found inside the `Stanford_Glove/modified_tests` subdirectory. This folder also contains slightly modified versions of the tests for the python version. 
    - In order to produce the vocaulary files, simply go to `Stanford_Glove/modified_tests/` and run the script `vocab_extractor.py` as 
