@@ -1,0 +1,7 @@
+Questions seen/total: 91.21
+Semantic global accuracy: 26.25
+Syntactic global accuracy: 20.15
+Total global accuracy: 22.69
+
+Semantic accuracies: {'capital-common-countries.txt': 0.5830039525691699, 'capital-world.txt': 0.25757575757575757, 'currency.txt': 0.03691275167785235, 'city-in-state.txt': 0.23476394849785406, 'family.txt': 0.39285714285714285}
+Syntactic accuracies: {'gram1-adjective-to-adverb.txt': 0.04536290322580645, 'gram2-opposite.txt': 0.0291005291005291, 'gram3-comparative.txt': 0.25375375375375375, 'gram4-superlative.txt': 0.08064516129032258, 'gram5-present-participle.txt': 0.13162878787878787, 'gram6-nationality-adjective.txt': 0.5733070348454964, 'gram7-past-tense.txt': 0.1358974358974359, 'gram8-plural.txt': 0.25225225225225223, 'gram9-plural-verbs.txt': 0.06206896551724138}

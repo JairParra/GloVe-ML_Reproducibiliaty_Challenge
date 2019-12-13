@@ -1,0 +1,8 @@
+Questions seen/total: 100.00
+Semantic global accuracy: 48.46
+Syntactic global accuracy: 44.36
+Total global accuracy: 46.22
+
+Semantic accuracies: {'capital-common-countries.txt': 0.7924901185770751, 'capital-world.txt': 0.6847922192749779, 'currency.txt': 0.08314087759815242, 'city-in-state.txt': 0.15322253749493311, 'family.txt': 0.6897233201581028}
+Syntactic accuracies: {'gram1-adjective-to-adverb.txt': 0.15221774193548387, 'gram2-opposite.txt': 0.09482758620689655, 'gram3-comparative.txt': 0.5180180180180181, 'gram4-superlative.txt': 0.28609625668449196, 'gram5-present-participle.txt': 0.41571969696969696, 'gram6-nationality-adjective.txt': 0.8599124452782989, 'gram7-past-tense.txt': 0.375, 'gram8-plural.txt': 0.5990990990990991, 'gram9-plural-verbs.txt': 0.34367816091954023}
+All accuracies: {'capital-common-countries.txt': 0.7924901185770751, 'capital-world.txt': 0.6847922192749779, 'currency.txt': 0.08314087759815242, 'city-in-state.txt': 0.15322253749493311, 'family.txt': 0.6897233201581028, 'gram1-adjective-to-adverb.txt': 0.15221774193548387, 'gram2-opposite.txt': 0.09482758620689655, 'gram3-comparative.txt': 0.5180180180180181, 'gram4-superlative.txt': 0.28609625668449196, 'gram5-present-participle.txt': 0.41571969696969696, 'gram6-nationality-adjective.txt': 0.8599124452782989, 'gram7-past-tense.txt': 0.375, 'gram8-plural.txt': 0.5990990990990991, 'gram9-plural-verbs.txt': 0.34367816091954023}
