@@ -5,9 +5,8 @@
 
 # COMP551_Mini4: Replication challenge 
 
-- **Track 2:** Reproduce and modify the model. 
-"You will first reproduce the results reported in the paper by running the code provided by the authors. Then you will try to modify the model and perform ablation studies to understand the model's robustness and evaluate the importance of the various model components. (In this context, the term "ablation" is used to describe the process of removing different model components to see how it impacts performance.) You can also try to improve the model based on your experiments. You should do a thorough analysis of the model through an
-extensive set of experiments. Note that some experiments will be diffcult to replicate due to computational resources. It is fine to reproduce only a subset of the original paper's results or to work on a smaller variant of the data|if necessary. **At a minimum, in this track you should use the authors code to reproduce a non-trivial subset of their results and explore how the model performs after you make minor modiffcations (e.g., changes to hyperparameters). An outstanding project in this track would perform very a detailed ablation study and/or implement significant/meaningful extensions of the model.**. 
+*Reproducibility, vaguely defined, refers to the ease with which the experiments and results of a paper can be replicated. Currently, there is a "crisis of reproducibility in machine learning". many innovative works are being published everyday, however, when other scientists attempt to reproduce them, sometimes due to complexity and lack of documentation, they are simply not able to do so, and when they do, results end up sometimes being different than described in the original works.\cite{repro_crisis}. In this paper we attempted to reproduce two papers: "From Group to Individual Lavels using Deep Features", and  Standford's "GloVe: Global Vectors for Word Representation". In the end, due to complexity and lack of documentation of the original work, as well as lack accessibility to external data and resources, we were unable to reproduce or even fully understand the underlying code of the first paper. In contrast, we were able to reproduce partial results of the GloVe paper at some extent, as well as to experiment with some minor changes and observe their outcomes. In particular, we were able to reproduce and explore different results on the word analogy tasks reported on the original paper. We nonetheless had to modify some evaluation scripts in order to make them run correctly, as well as to implement some minor scripts to generate graphics and transform data necessary for evaluation. Through this paper, we also offer some criticism of the lack of "good practices" when creating work that will be published to the research community, such as intergation of documentation and demo examples.*
+
 
 ## Our paper: 
 - https://www.overleaf.com/7741963696nwdpsgxqvvqy
@@ -23,33 +22,21 @@ extensive set of experiments. Note that some experiments will be diffcult to rep
    - Their paper: https://nlp.stanford.edu/pubs/glove.pdf 
    - Their repository: https://github.com/stanfordnlp/GloVe
    - *Comments:* The repository uses code in C, python and bash; however the repository structure is very well organized, the code is fairly clean and well-commented, and they also include a demo.  
-   - *What would we like to do?*
- 
- - *General Reproducibility Notes* 
-   - Most of these works and libraries at its core are purely dependent/based on Linux systems, with very little or no support for reproducibility in other systems like Windows. 
-
-## Announcements: 
-- We are abandoning the previous paper. Focus on the new one 
- 
-## Tasks: 
-- The tasks for each person will be put in here. These tasks will be decided in group. 
-If there is something else wants to do additionally, please discuss it and then write it down here as well. 
-- If a task is done, don't delete it immediately, instead, put a **done** mark next to it, and wait for two three days to delete it so we can keep track of what's done! 
-
-### All 
-- Choose paper, fill the form https://forms.gle/vPiqmT27qM2U5SME7. 
-- Read the new paper we're considering 
-- Replicate the code on the demo subset locally 
-- Come up with experimentation/modification ideas 
-
-### Jair: 
-- Start working on the 
-
-### KhorenL:  
-- See All 
-
-### Rivka 
-- Get the missing tests from the Demo running
+   
+ ## General Reproducibility Notes
+   - Standford pretrained vectors can be found at https://nlp.stanford.edu/projects/glove/
+   - Most of these works and libraries at its core are purely dependent/based on Linux systems, with very little or no support for reproducibility in other systems like Windows. Please first follow the original setup instructions from the *GloVe* repository (https://github.com/stanfordnlp/GloVe).  
+   - The script modifications/and or additional scripts we implemented can be found inside the `Stanford_Glove/modified_tests` subdirectory. This folder also contains slightly modified versions of the tests for the python version. 
+   - In order to produce the vocaulary files, simply go to `Stanford_Glove/modified_tests/` and run the script `vocab_extractor.py` as 
+   
+   `vocab_extractor.py [-h] [--vectors_file VECTORS_FILE] [--encoding ENCODING] [--saving_path SAVING_PATH]`
+   
+   - Note that `encoding=utf-8` by default, and if you simply place a vector file with the arguments, it will be saved automatically in the same folder.  
+   
+   - The evaluation tests scripts can be used by placing the respective vector files under the `Stanford_Glove/modified_tests/pretrained_vectors` subdirectory. The `evaluate.py` file is preserved for comparison, but the `adapted_evaluate.py` script provides easier access. Once the vector embeddings are t in the respective folder, simply run the `adapted_evaluate.py` as 
+   
+   `python adapted_evaluate.py [-h] [--vocab_file VOCAB_FILE] [--vectors_file VECTORS_FILE] [--encoding ENCODING]` 
+      
 
 ### Attribution 
 
