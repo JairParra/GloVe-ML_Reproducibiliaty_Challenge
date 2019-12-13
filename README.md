@@ -36,6 +36,8 @@
    - The evaluation tests scripts can be used by placing the respective vector files under the `Stanford_Glove/modified_tests/pretrained_vectors` subdirectory. The `evaluate.py` file is preserved for comparison, but the `adapted_evaluate.py` script provides easier access. Once the vector embeddings are t in the respective folder, simply run the `adapted_evaluate.py` as 
    
    `python adapted_evaluate.py [-h] [--vocab_file VOCAB_FILE] [--vectors_file VECTORS_FILE] [--encoding ENCODING]` 
+   
+   - The `figures` directory also contains a notebook for producing the figures we reported in the paper. 
       
 
 ### Attribution 
