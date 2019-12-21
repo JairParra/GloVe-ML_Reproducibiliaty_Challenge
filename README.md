@@ -1,11 +1,11 @@
 [![Generic badge](https://img.shields.io/badge/Mini_project_4-blue.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/Contributors-3-<COLOR>.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/COMP551-Applied_Machine_Learning-red.svg)](https://shields.io/)
-[![Generic badge](https://img.shields.io/badge/Neat_level-OVER_9000-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Building-None-green.svg)](https://shields.io/)
 
 # COMP551_Mini4: Replication challenge 
 
-*Reproducibility, vaguely defined, refers to the ease with which the experiments and results of a paper can be replicated. Currently, there is a "crisis of reproducibility in machine learning". many innovative works are being published everyday, however, when other scientists attempt to reproduce them, sometimes due to complexity and lack of documentation, they are simply not able to do so, and when they do, results end up sometimes being different than described in the original works.\cite{repro_crisis}. In this paper we attempted to reproduce two papers: "From Group to Individual Lavels using Deep Features", and  Standford's "GloVe: Global Vectors for Word Representation". In the end, due to complexity and lack of documentation of the original work, as well as lack accessibility to external data and resources, we were unable to reproduce or even fully understand the underlying code of the first paper. In contrast, we were able to reproduce partial results of the GloVe paper at some extent, as well as to experiment with some minor changes and observe their outcomes. In particular, we were able to reproduce and explore different results on the word analogy tasks reported on the original paper. We nonetheless had to modify some evaluation scripts in order to make them run correctly, as well as to implement some minor scripts to generate graphics and transform data necessary for evaluation. Through this paper, we also offer some criticism of the lack of "good practices" when creating work that will be published to the research community, such as intergation of documentation and demo examples.*
+*Reproducibility, vaguely defined, refers to the ease with which the experiments and results of a paper can be replicated. Currently, there is a "crisis of reproducibility in machine learning". many innovative works are being published everyday, however, when other scientists attempt to reproduce them, sometimes due to complexity and lack of documentation, they are simply not able to do so, and when they do, results end up sometimes being different than described in the original works.\cite{repro_crisis}. In this paper we attempted to reproduce two papers: "From Group to Individual Lavels using Deep Features", and  Standford's "GloVe: Global Vectors for Word Representation". In the end, due to complexity and lack of documentation of the original work, as well as lack accessibility to external data and resources, we were unable to reproduce or even fully understand the underlying code of the first paper. In contrast, we were able to reproduce partial results of the GloVe paper at some extent, as well as to experiment with some minor changes and observe their outcomes. In particular, we were able to reproduce and explore different results on the word analogy tasks reported on the original paper. We nonetheless had to modify some evaluation scripts in order to make them run correctly, as well as to implement some minor scripts to generate graphics and transform data necessary for evaluation. Through this paper, we also offer some criticism of the lack of "good practices" when creating work that will be published to the research community, such as intergation of documentation and demo examples.
 
 
 ## Our paper: 
@@ -22,6 +22,14 @@
    - Their paper: https://nlp.stanford.edu/pubs/glove.pdf 
    - Their repository: https://github.com/stanfordnlp/GloVe
    - *Comments:* The repository uses code in C, python and bash; however the repository structure is very well organized, the code is fairly clean and well-commented, and they also include a demo.  
+   
+## GloVe Reproducibility Results: 
+   
+![](figs/Acc_Diff_Word_Tasks.png)
+
+![](figs/Acc_vs_Vec_Dim.png)
+
+![](figs/Acc_vs_Window_Size.png) 
    
  ## General Reproducibility Notes
    - Standford pretrained vectors can be found at https://nlp.stanford.edu/projects/glove/
