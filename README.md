@@ -9,7 +9,7 @@
 
 
 ## Our paper: 
-- https://www.overleaf.com/7741963696nwdpsgxqvvqy
+- https://drive.google.com/file/d/1sYZlUz4aTcrFkYPM1l7CiIZfZ-OjgMA8/view?usp=sharing
 
 ## Objective Replication Paper 
 
